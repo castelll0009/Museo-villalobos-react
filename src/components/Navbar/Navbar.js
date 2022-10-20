@@ -59,7 +59,7 @@ import imgLogoMuseo from '../../assets/imgs/logo-museo.png';
                         </NavLinks>
                     </NavItem>                              
                     <NavItem>
-                        <NavLinks  to='/art-gallery'>
+                        <NavLinks  to='/gallery-art'>
                             Galeria de arte
                         </NavLinks>
                     </NavItem>                              
