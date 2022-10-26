@@ -1,15 +1,60 @@
 import React from 'react';
 import {
-	Section,
-	TitleContainer
+	TitleContainer,
+	H1,
+	ArtGalleryContainer,
+	Evento,
+	Foto,	
+	Img,
+	Fecha
 } from './ArtGallery.elements';
 
 
-const ArtGallery = () => {
+const ArtGallery = (
+	{	
+	img1, 
+	img2,
+	img3,
+	img4,
+	fecha,
+    alt
+	}
+) => {
   return (
+	< >	
 	<TitleContainer > {/*hero*/}
-		<h1>Torre artistica(tour artistique)</h1>
-	</TitleContainer>
+		<H1>Torre artistica(tour artistique)</H1>
+	</TitleContainer>	
+	<ArtGalleryContainer>
+		<Evento>
+			<Foto data-os="fade-up">
+				<Img src={img1} alt={alt}/>
+			</Foto>
+			<Fecha>{fecha}</Fecha>
+		</Evento>
+		<Evento>
+			<Foto data-os="fade-up">
+				<Img src={img2} alt={alt}/>
+			</Foto>
+			<Fecha>Noviembre 25 2022</Fecha>
+		</Evento>
+		<Evento>
+			<Foto data-os="fade-up">
+				<Img src={img3} alt={alt}/>
+			</Foto>
+			<Fecha>Noviembre 25 2022</Fecha>
+		</Evento>
+		<Evento>
+			<Foto data-os="fade-up">
+				<Img src={img4} alt={alt}/>
+			</Foto>
+			<Fecha>Noviembre 25 2022</Fecha>
+		</Evento>
+		
+	</ArtGalleryContainer>	
+	</>
+
+	
   )
 }
 
